@@ -9,5 +9,6 @@
     display: inline-block !important;
 }
 .toggle-height{
+    transition: all 3s;
     height: max-content !important;
 }

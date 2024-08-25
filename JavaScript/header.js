@@ -22,7 +22,7 @@ function closeActiveDropdown(activeDropdown){
 }
 function showDropdown(){
     let headerListElement = document.querySelectorAll('.header-list-element');
-    let record={};
+    let record={target:null};
     headerListElement.forEach((element)=>{
         let headerListText = element.querySelector('.header-list-text')
         const dropdown = element.querySelector('.header-dropdown') 
@@ -30,17 +30,18 @@ function showDropdown(){
         
         headerListText.addEventListener('click',(event)=>{
             let activatedDropdown =document.querySelector('.header-list-element .header-dropdown.toggle-display')
-            console.log(record.target == event.target);
-            console.log(activatedDropdown)
             // prevents two dropdown menu from appearing
             if(activatedDropdown){
                 closeActiveDropdown( activatedDropdown)
-                // if it is a different element
-                if(!(record.target==undefined || record.target == event.target)){
+                // if clicked element is a different element then show dropdown
+                if( !(record.target == event.target)){
                     dropdown.classList.toggle('toggle-display')
                     dropdown.classList.toggle('toggle-height')
+                    record = event
                 }
-                record={}
+                else{
+                    record={target:null}
+                }
             }
             
             // displays dropdown menu
@@ -49,6 +50,7 @@ function showDropdown(){
                dropdown.classList.toggle('toggle-height')
                record = event
             }
+            console.log('---------------------------------------------------');
         })
     })
 }
