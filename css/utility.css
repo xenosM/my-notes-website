@@ -6,9 +6,5 @@
     justify-content: center;
 }
 .toggle-display{
-    display: inline-block !important;
-}
-.toggle-height{
-    transition: all 3s;
-    height: max-content !important;
+    animation: show-dropdown .5s ease-out forwards !important;
 }

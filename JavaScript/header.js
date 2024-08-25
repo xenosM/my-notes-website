@@ -17,8 +17,6 @@ function animateDropdownElement(){
 }
 function closeActiveDropdown(activeDropdown){
         activeDropdown.classList.remove('toggle-display')
-        activeDropdown.classList.remove('toggle-height')    
-    
 }
 function showDropdown(){
     let headerListElement = document.querySelectorAll('.header-list-element');
@@ -36,7 +34,6 @@ function showDropdown(){
                 // if clicked element is a different element then show dropdown
                 if( !(record.target == event.target)){
                     dropdown.classList.toggle('toggle-display')
-                    dropdown.classList.toggle('toggle-height')
                     record = event
                 }
                 else{
@@ -47,14 +44,12 @@ function showDropdown(){
             // displays dropdown menu
             else {
                dropdown.classList.toggle('toggle-display')
-               dropdown.classList.toggle('toggle-height')
                record = event
             }
-            console.log('---------------------------------------------------');
         })
     })
 }
 
 // CODE
 animateDropdownElement()
-showDropdown()
+showDropdown()  
