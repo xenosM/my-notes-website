@@ -16,10 +16,9 @@ function animateDropdownElement(){
     })
 }
 function closeActiveDropdown(activeDropdown){
-    if(activeDropdown){
         activeDropdown.classList.remove('toggle-display')
         activeDropdown.classList.remove('toggle-height')    
-    }
+    
 }
 function showDropdown(){
     let headerListElement = document.querySelectorAll('.header-list-element');
@@ -31,21 +30,25 @@ function showDropdown(){
         
         headerListText.addEventListener('click',(event)=>{
             let activatedDropdown =document.querySelector('.header-list-element .header-dropdown.toggle-display')
-            console.log(activatedDropdown)
-            console.log(record.target);
-            console.log(event.target);
             console.log(record.target == event.target);
+            console.log(activatedDropdown)
             // prevents two dropdown menu from appearing
             if(activatedDropdown){
                 closeActiveDropdown( activatedDropdown)
+                // if it is a different element
+                if(!(record.target==undefined || record.target == event.target)){
+                    dropdown.classList.toggle('toggle-display')
+                    dropdown.classList.toggle('toggle-height')
+                }
+                record={}
             }
             
             // displays dropdown menu
             else {
                dropdown.classList.toggle('toggle-display')
                dropdown.classList.toggle('toggle-height')
+               record = event
             }
-            console.log('------------------------------------------------');
         })
     })
 }
