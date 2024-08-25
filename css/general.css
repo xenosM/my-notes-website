@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(223, 223, 209);
+    
+}
+button{
+    padding:0;
+    background: none;
+    border:none;
+    cursor:pointer;
+    display: inline-block;
+}
+a{
+    text-decoration:none;
+}
+ul{
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+/* PROJECT GENERAL STYLING */
+
+:root{
+    /* SIZES */
+    --size-xs:10px;
+    --size-sm:12px;
+    --size-base:16px;
+    --size-lg:18px;
+    --size-xl:22px;
+    --size-2xl:26px;
+    --size-3xl:30px;
+
+}

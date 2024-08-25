@@ -1,0 +1,13 @@
+.flex{
+    display: flex;
+}
+.flex-center{
+    align-items: center;
+    justify-content: center;
+}
+.toggle-display{
+    display: inline-block !important;
+}
+.toggle-height{
+    height: max-content !important;
+}

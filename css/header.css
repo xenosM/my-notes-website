@@ -1,0 +1,105 @@
+header{
+    font-family: cursive;
+}
+.header-container{
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90vw;
+    margin:  auto;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: .25rem 1rem;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+}
+
+/* LEFTSIDE */
+/* MIDDLE */
+.header-middleside{
+    
+    .header-list-element{
+        float: left;
+        user-select: none;
+    }
+    .foo,.bar,.baz{
+        position: relative;
+
+    }
+    .header-list-text{
+        cursor: pointer;
+        font-size: var(--size-lg);
+        transition: all .1s linear;
+
+    }
+    .header-list-text:hover{
+        border-bottom: 2px solid burlywood;
+        transform: scale(1.1);
+        color: burlywood;
+    }
+    .header-list-element:not(:last-child){
+        margin-right: 2rem;
+    }
+    /* dropdown menu */
+    .header-dropdown{
+        position: absolute;
+         top: 4rem;
+         left:50% ;
+        transform:translateX(-50%) ;
+        padding: 1rem;
+        background-color: white;
+        border-radius: 5px;
+        /* toggled properties */
+        display: none;
+        height: 0;
+    }
+   
+    .dropdown-list{
+        padding: 0;
+    }
+    .dropdown-list-element{
+        cursor: pointer;
+        position: relative;
+        min-width: max-content;
+        width: 100%;
+        text-align: center;
+        transition: color 0.5s;
+    }
+    .dropdown-list-element:hover{
+        color: burlywood;
+    }
+    .dropdown-list-element::after{
+        content:"";
+        border-top: .15em solid burlywood;
+        position: absolute;
+         bottom: 0px;
+         right: 50%;
+         left: 50%;
+        animation: var(--animate-underline) ;
+    }
+   
+    .dropdown-list-element:not(:last-child){
+        margin-bottom: 1rem;
+    }
+}
+/* RIGHTSIDE */
+.header-rightside{
+    .header-btn .front,.header-btn{
+        border-radius: 12px;
+    }
+    .header-btn{
+        font-size: var(--size-lg);
+        cursor: pointer;
+        background-color: rgb(177, 146, 105);
+        outline-offset: 4px;
+    }
+    .header-btn .front{
+        color: black;
+        padding: .5em 1em;
+        display: block;
+        background-color: burlywood;
+        transform:translateY(-5px)
+    }
+    .header-btn:active>.front{
+        transform:translateY(0px)
+    }
+}

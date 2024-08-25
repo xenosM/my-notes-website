@@ -1,0 +1,10 @@
+@keyframes animate-underline {
+    from{
+       right: 50%; 
+       left:50%;
+    }
+    to{
+        right: 0; 
+        left:0;
+    }
+}

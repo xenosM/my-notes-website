@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector references</title>
+</head>
+<!-- STYLESHEET -->
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/general.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/utility.css">
+<link rel="stylesheet" href="css/animation.css">
+
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container flex">
+            <!-- LEFTSIDE -->
+            <div class="header-leftside">
+                <div class="header-logo-container">
+                    <svg width="80" height="80" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="logo">
+                            <rect width="120" height="120" fill="white"/>
+                            <g id="letter-m">
+                                <g id="m-stroke1">
+                                <path d="M11 89V32H19H31L41.5 71.5L31 75.5L19 32V73.5L11 89Z" fill="black"/>
+                                <path d="M19 32V73.5L11 89V32H19ZM19 32L31 75.5L41.5 71.5L31 32H19Z" stroke="black"/>
+                                </g>
+                                <g id="m-stroke2">
+                                <path d="M65 90.5V33.5H57H45L34.5 73L45 77L57 33.5V75L65 90.5Z" fill="black"/>
+                                <path d="M57 33.5V75L65 90.5V33.5H57ZM57 33.5L45 77L34.5 73L45 33.5H57Z" stroke="black"/>
+                                </g>
+                            </g>
+                            <g id="letter-n">
+                            <path id="n-stroke2" d="M71 89V33H80V74L71 89Z" fill="black" stroke="black"/>
+                            <path id="n-stroke3" d="M98 91V34H108V75.7321L98 91Z" fill="black" stroke="black"/>
+                            <path id="n-stroke1" d="M98.55 85L81 44.596V35L107 76.4141L98.55 85Z" fill="black" stroke="black"/>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <!-- MIDDLE -->
+            <div class="header-middleside">
+                <nav>
+                    <ul class="header-list">
+                        <li class="header-list-element foo">
+                            <div class="header-list-text">Notes</div>
+
+                            <div class="header-dropdown dropdown-1">
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-list-element">
+                                        Selector References 
+                                    </li>
+                                    <li class="dropdown-list-element">
+                                        note1 
+                                    </li>
+                                    <li class="dropdown-list-element">
+                                        note2
+                                    </li>
+                                    <li class="dropdown-list-element">
+                                        note3
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header-list-element bar">
+                            <div class="header-list-text">Replica Websites</div>
+                            <div class="header-dropdown dropdown-2">
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-list-element">
+                                        website1
+                                    </li>
+                                    <li class="dropdown-list-element">
+                                        website1
+                                    </li>
+                                    <li class="dropdown-list-element">
+                                        website1
+                                    </li>
+                                    <li class="dropdown-list-element">
+                                        website1
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header-list-element baz">
+                            <div class="header-list-text">Practice</div>
+                            <div class="header-dropdown dropdown-3">
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-list-element">
+                                        replica1
+                                    </li>
+                                    <li class="dropdown-list-element">
+                                        replica1
+                                    </li>
+                                    <li class="dropdown-list-element">
+                                        replica1
+                                    </li>
+                                    <li class="dropdown-list-element">
+                                        replica1
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- RIGHTSIDE -->
+            <div class="header-rightside">
+                <button class="header-signin-btn header-btn"><span class="front">Sign in</span></button>
+                <button class="header-login-btn header-btn"><span class="front">Log in</span></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <ol class="main__list">
+            <!-- 01 -->
+            <li>
+                <h2><span>.class.class</span> (selects the class with all the specified class name)</h2>
+                <div class="container section-1 ">
+                    <div class="layer1">
+                        <p class="foo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, magnam.</p>
+                        <p class="foo bar">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, eaque?</p>
+                        <p class="foo bar baz">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, vel!</p>
+                    </div>
+                </div>
+            </li>
+            <!-- 02 -->
+            <li>
+                <h2><span>.class .class</span> (selects the all decendent classes [<strong>including children and further decendents</strong>])</h2>
+                <div class="container section-2">
+                    <div class="layer1 main">
+                        <div class="child1 child layer2">
+                            <p class="grandchild">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, pariatur?</p>
+                        </div>
+                        <div class="child2 child">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, sed.
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- 03 -->
+            <li>
+                <h2><span>element element</span> (selects all the element inside the element [<strong>including children and further decendents</strong>])</h2>
+                <div class="container section-3">
+                    <div class="layer1">
+                        <strong>layer1</strong>
+                        <div class="layer2">
+                            <strong>layer2</strong>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, molestias!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quidem!</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, rerum?</p>
+                    </div>
+                </div>
+            </li>
+            <!-- 04 -->
+            <li>
+                <h2><span>element > element</span> (selects only the <strong>direct children</strong> of the parent element)</h2>
+                <div class="container section-4">
+                    <div class="layer1">
+                        <strong>layer1</strong>
+                        <div class="layer2">
+                            <strong>layer2</strong>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, molestias!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quidem!</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, rerum?</p>
+                    </div>
+                </div>
+            </li>
+            <!-- 05 -->
+            <li>
+                <h2><span>element + element</span> (selects the <strong> one immidiate sibling</strong> of an element)</h2>
+                <div class="container section-5">
+                    <div class="layer1">
+                        <p class="element1">element 1</p>
+                        <p>sibling 1</p>
+                        <p>sibling 2</p>
+                    </div>
+                </div>
+            </li>
+            <!-- 06 -->
+            <li>
+                <h2><span>element-1 ~ element-2</span> (selects the elements which are <strong>directly preceded</strong> by element-1 )</h2>
+                <div class="container section-6">
+                    <div class="layer1">
+                        <strong>layer1</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, veniam.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, vero?</p>
+                        <p class="preceded-element">preceded element</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, aliquam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, repudiandae.</p>
+                        <div class="layer2">
+                            <strong>layer2</strong>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, tempore.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, aliquid!</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- 07 -->
+            <li>
+                <h2><span>[attribute]</span> (selects element with specified attribute )</h2>
+                <div class="container section-7">
+                    <div class="layer1">
+                        <p id="">id attribute</p>
+                        <p class="">class attribute</p>
+                        <p style="">style attribute</p>
+                    </div>
+                </div>
+            </li>
+            <!-- 08 -->
+            <li>
+                <h2><span>[attribute = value]</span> (selects element with attribute of specified value [<strong>cannot contain other values</strong>])</h2>
+                <div class="container section-8">
+                    <div class="layer1">
+                        <p id="not-specified">id attribute value not specified</p>
+                        <p id="specified">id attribute value specified</p>
+                        <p class="not-specified">class attribute value not specified</p>
+                        <p class="specified">class attribute valued specified</p>
+                        <p style="background-color: none;">style attribute no background-color</p>
+                        <p style="background-color: yellow;">style attribute yellow background-color (specified)</p>
+                    </div>
+                </div>
+            </li>
+            <!-- 09 -->
+            <li>
+                <h2><span>attribute ~= value</span> (selects element with attribute containing specified value [<strong>but can also contain other values</strong>] )</h2>
+                <div class="container section-9">
+                    <div class="layer1">
+                        <p class="foo">class="foo"</p>
+                        <p class="foo bar">class="foo bar"</p>
+                        <p class="foobar">class="foobar"</p>
+                    </div>
+        
+                </div>
+            </li>
+            <!-- 10 -->
+            <li>
+                <h2><span>attribute |= value</span> (selects element with attribute  having value<strong> equal to specified value or starting with "-specified value"</strong> )</h2>
+                <div class="container section-10">
+                    <div class="layer1">
+                        <p class="foo">class="foo"</p>
+                        <p class="foo-bar">class="foo-bar"</p>
+                        <p class="foo bar">class="foo bar"</p>
+                        <p class="foobar">class="foobar"</p>
+                    </div>
+        
+                </div>
+            </li>
+            <!-- 11 -->
+            <li>
+                <h2><span>attribute ^= value</span> (selects element with attribute  having value<strong> starting with a specified value</strong> )</h2>
+                <div class="container section-11">
+                    <div class="layer1">
+                        <p class="foo">class="foo"</p>
+                        <p class="foo-bar">class="foo-bar"</p>
+                        <p class="foo bar">class="foo bar"</p>
+                        <p class="foobar">class="foobar"</p>
+                        <p class="barfoo">class="barfoo"</p>
+                    </div>
+        
+                </div>
+            </li>
+            <!-- 12 -->
+            <li>
+                <h2><span>attribute $= value</span> (selects element with attribute  having value<strong> ending with a specified value</strong> )</h2>
+                <div class="container section-12">
+                    <div class="layer1">
+                        <p class="foo">class="foo"</p>
+                        <p class="foo-bar">class="foo-bar"</p>
+                        <p class="foo bar">class="foo bar"</p>
+                        <p class="foobar">class="foobar"</p>
+                        <p class="barfoo">class="barfoo"</p>
+                    </div>
+        
+                </div>
+            </li>
+            <!-- 13 -->
+            <li>
+                <h2><span>attribute *= value</span> (selects element with attribute  <strong>  containing a specified substring of value</strong> )</h2>
+                <div class="container section-13">
+                    <div class="layer1">
+                        <p class="foo">class="foo"</p>
+                        <p class="foo-bar">class="foo-bar"</p>
+                        <p class="foo bar">class="foo bar"</p>
+                        <p class="foobar">class="foobar"</p>
+                        <p class="barfoo">class="barfoo"</p>
+                        <p class="bar">class="bar"</p>
+                    </div>
+        
+                </div>
+            </li>
+            <!-- 14 -->
+            <li>
+                <h2><span>:active</span> (triggers style when element is clicked )</h2>
+                <div class="container section-14">
+                    <div class="layer1">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, perferendis?</p>
+                        <a href="#">link</a>
+                    </div>
+        
+                </div>
+            </li>
+            <!-- 15 -->
+            <li>
+                <h2><span>:disabled & :enabled</span> (selects  input elements which are disabled or enabled  )</h2>
+                <div class="container section-15">
+                    <div class="layer1">
+                        <input type="text" value="enabled">
+                        <input type="text"  value="disabled" disabled="disabled">
+                    </div>
+        
+                </div>
+            </li>
+            <!-- 16 -->
+            <li>
+                <h2><span>:empty</span> (selects all elements which <strong>have no children and no text node</strong> )</h2>
+                <div class="container section-16">
+                    <div class="layer1">
+                        <p>under this is a div with no children</p>
+                        <div></div>
+                        <div style="border: 1px solid black;">
+                            <h3>has children</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, nostrum.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, nostrum.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, nostrum.</p>
+                        </div>
+                    </div>
+        
+                </div>
+            </li>
+            <!-- 17 -->
+            <li>
+                <h2><span>:first-child</span> (selects the <strong>specified element if it is the first child of its parent</strong> )</h2>
+                <div class="container section-17">
+                    <div class="layer1">
+                        <p>first</p>
+                        <p>second</p>
+                        <div class="layer2">
+                            <h3>the p is not first child</h3>
+                            <p>first</p>
+                        </div>
+                    </div>
+        
+                </div>
+            </li>
+            <!-- 18 -->
+            <li>
+                <h2><span>:first-letter</span> (selects the first letter )</h2>
+                <div class="container section-18">
+                    <div class="layer1">
+                        <p>select first letter</p>
+                    </div>
+        
+                </div>
+            </li>
+            <!-- 19 -->
+            <li>
+                <h2><span>:first-line</span> (selects the first line of the paragraph)</h2>
+                <div class="container section-19">
+                    <div class="layer1">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+        
+                </div>
+            </li>
+            <!-- 20 -->
+            <li>
+                <h2><span>:first-of-type</span> (selects the specified element <strong> if it is the first of its type in the parent node</strong>  )</h2>
+                <div class="container section-20">
+                    <div class="layer1">
+                        <p>first</p>
+                        <p>second</p>
+                        <div class="layer2">
+                            <div>this is a div</div>
+                            <p>first</p>
+                            <p>second</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- 21 -->
+            <li>
+                <h2><span>:focus</span> (selects the input if it is focused on )</h2>
+                <div class="container section-21">
+                    <div class="layer1">
+                        <input type="text" placeholder="enter">
+                    </div>
+        
+                </div>
+            </li>
+            <!-- 22 -->
+            <li>
+                <h2><span>element1:has(+element2)</span> (selects element1 if it has element2 immidiately after it )</h2>
+                <div class="container section-22">
+                    <div class="layer1">
+                        <div class="layer2 gap">
+                            <strong>layer2 </strong>
+                            <p>this is a p</p>
+                        </div>
+                        <div class="layer2 gap">
+                            <strong>layer2</strong>
+                            <div>this is a div</div>
+                        </div>
+        
+                    </div>
+        
+                </div>
+            </li>
+            <!-- 23 -->
+            <li>
+                <h2><span>:in-range & :out-of-range</span> (selects the input whose value is <strong>in or out of range</strong>  of the specified number )</h2>
+                <div class="container section-23">
+                    <div class="layer1">
+                        <input type="number" value="10" min="0" max="10">
+                        <input type="number" value="20"min="0" max="10">
+                        <input type="number" min="0" max="10">
+                    </div>
+        
+                </div>
+            </li>
+            <!-- 24 -->
+            <li>
+                <h2><span>:invalid & :valid</span> (selects a input if its value is<strong> invalid or valid</strong>)</h2>
+                <div class="container section-24">
+                    <div class="layer1">
+                        <input type="number">
+                    </div>
+        
+                </div>
+            </li>
+            <!-- 25 -->
+            <li>
+                <h2><span>:last-child</span> (selects specified element if it is the last child of its parent )</h2>
+                <div class="container section-25">
+                    <div class="layer1">
+                        <div class="layer2 gap">
+                            <h3>heading</h3>
+                            <p>last child</p>
+                        </div>
+                        <div class="layer2 gap">
+                            <p>last child</p>
+                        </div>
+                        <div class="layer2">
+                            <h3>heading</h3>
+                            <p>last p</p>
+                            <div>this is a div</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- 26 -->
+            <li>
+                <h2><span>:last-of-type</span> (selects specified element if it is<strong> last of its type in a parent</strong> )</h2>
+                <div class="container section-26">
+                    <div class="layer1">
+                        <div class="layer2 gap">
+                            <h3>heading</h3>
+                            <p>last child</p>
+                        </div>
+                        <div class="layer2 gap">
+                            <p>second last p</p>
+                            <p>last child</p>
+                        </div>
+                        <div class="layer2">
+                            <h3>heading</h3>
+                            <p>last p</p>
+                            <div>this is a div</div>
+                        </div>
+                    </div>
+        
+                </div>
+            </li>
+            <!-- 27 -->
+            <li>
+                <h2><span>:link</span> (selects unvisited links )</h2>
+                <div class="container section-27">
+                    <div class="layer1">
+                        <a href="#">link1</a>
+                        <a href="#">link2</a>
+                    </div>
+        
+                </div>
+            </li>
+            <!-- 28 -->
+            <li>
+                <h2><span>::marker</span> (selects the marker of the list )</h2>
+                <div class="container section-28">
+                    <div class="layer1">
+                        <strong>list-1</strong>
+                        <ol class="list-1">
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                        </ol>
+                        <strong>normal list</strong>
+                     <ol>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                     </ol>
+                    </div>
+        
+                </div>
+            </li>
+            <!-- 29 -->
+            <li>
+                <h2><span>:not()</span> (selects all other element which is not the specified element )</h2>
+                <div class="container section-29">
+                    <div class="layer1">
+                        <h3>select element which is not the class foo</h3>
+                        <p class="foo">foo</p>
+                        <p class="baz">baz</p>
+                        <p class="bar">bar</p>
+                    </div>
+        
+                </div>
+            </li>
+            <!-- 30 -->
+            <li>
+                <h2><span>:nth-child()</span> (selects the element <strong>if it is nth child of the parent</strong>)</h2>
+                <div class="container section-30">
+                    <div class="layer1">
+                        <h3>select 2nd p</h3>
+                        <div class="layer2 gap">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, similique!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, similique!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, similique!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, similique!</p>
+                        </div>
+                        <h3>selecr 3rd p</h3>
+                        <div class="layer2">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, necessitatibus.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, necessitatibus.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, necessitatibus.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, necessitatibus.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- 31 -->
+            <li>
+                    <h2><span>:nth-last-child()</span> (selects the element <strong>if it is nth last child of the parent</strong>)</h2>
+                    <div class="container section-31">
+                        <div class="layer1">
+                            <h3>select 2nd last p</h3>
+                            <div class="layer2 gap">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, similique!</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, similique!</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, similique!</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, similique!</p>
+                            </div>
+                            <h3>selecr 3rd last p</h3>
+                            <div class="layer2">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, necessitatibus.</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, necessitatibus.</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, necessitatibus.</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, necessitatibus.</p>
+                            </div>
+                        </div>
+        
+                    </div>
+            </li>
+            <!-- 32 -->
+            <li>
+                <h2><span>:nth-of-type</span> (selects the element <strong>if it is nth of its type in a parent</strong> )</h2>
+                <div class="container section-32">
+                    <div class="layer1">
+                        <h3>select 2nd p</h3>
+                        <div class="layer2">
+                            <div> div1</div>
+                            <div>div2</div>
+                            <p>p1</p>
+                            <p>p2</p>
+                            <p>p3</p>
+                        </div>
+                        <h3>select 3rd p</h3>
+                        <div class="layer2">
+                            <p>p1</p>
+                            <div>div1</div>
+                            <p>p2</p>
+                            <p>p3</p>
+                        </div>
+                    </div>
+        
+                </div>
+            </li>
+            <!-- 33 -->
+            <li>
+                <h2><span>:nth-last-of-type</span> (selects the element <strong>if it is last nth of its type in a parent</strong> )</h2>
+                <div class="container section-33">
+                    <div class="layer1">
+                        <h3>select 2nd last p</h3>
+                        <div class="layer2">
+                            <div> div1</div>
+                            <div>div2</div>
+                            <p>p1</p>
+                            <p>p2</p>
+                            <p>p3</p>
+                            <p>p4</p>
+                        </div>
+                        <h3>select 3rd last p</h3>
+                        <div class="layer2">
+                            <p>p1</p>
+                            <div>div1</div>
+                            <p>p2</p>
+                            <p>p3</p>
+                        </div>
+                    </div>
+        
+                </div>
+            </li>
+            <!-- 34 -->
+            <li>
+                <h2><span>:only-of-type</span> (selects the element <strong>if it is the only one of its type in a parent</strong> )</h2>
+                <div class="container section-34">
+                    <div class="layer1">
+                        <div class="layer2 gap">
+                            <p>p1</p>
+                            <p>p2</p>
+                        </div>
+                        <div class="layer2 gap">
+                            <p>p1</p>
+                        </div>
+                    </div>
+        
+                </div>
+            </li>
+            <!-- 35 -->
+            <li>
+                <h2><span>:only-child</span> (selects the element <strong>if it is the only child in a parent</strong> )</h2>
+                <div class="container section-35">
+                    <div class="layer1">
+                        <div class="layer2 gap">
+                            <p>p1</p>
+                            <p>p2</p>
+                        </div>
+                        <div class="layer2 gap">
+                            <div>div1</div>
+                            <p>p1</p>
+                        </div>
+                        <div class="layer2">
+                            <p>p1</p>
+                        </div>
+                    </div>
+        
+                </div>
+            </li>
+            <!-- 36 -->
+            <li>
+                <h2><span>::Selection</span> (selects the portion of element selected by the user )</h2>
+                <div class="container section-36">
+                    <div class="layer1">
+                        <div class="layer2">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, aliquid!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, esse!</p>
+                        </div>
+                    </div>
+        
+                </div>
+            </li>
+        
+        </ol>
+    </main>
+
+<!-- JS -->
+<script src="JavaScript/header.js"></script>
+</body>
+</html>

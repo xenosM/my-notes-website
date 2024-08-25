@@ -1,0 +1,20 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="logo">
+        <rect width="120" height="120" fill="white"/>
+        <g id="letter-m">
+            <g id="m-stroke1">
+            <path d="M11 89V32H19H31L41.5 71.5L31 75.5L19 32V73.5L11 89Z" fill="black"/>
+            <path d="M19 32V73.5L11 89V32H19ZM19 32L31 75.5L41.5 71.5L31 32H19Z" stroke="black"/>
+            </g>
+            <g id="m-stroke2">
+            <path d="M65 90.5V33.5H57H45L34.5 73L45 77L57 33.5V75L65 90.5Z" fill="black"/>
+            <path d="M57 33.5V75L65 90.5V33.5H57ZM57 33.5L45 77L34.5 73L45 33.5H57Z" stroke="black"/>
+            </g>
+        </g>
+        <g id="letter-n">
+        <path id="n-stroke2" d="M71 89V33H80V74L71 89Z" fill="black" stroke="black"/>
+        <path id="n-stroke3" d="M98 91V34H108V75.7321L98 91Z" fill="black" stroke="black"/>
+        <path id="n-stroke1" d="M98.55 85L81 44.596V35L107 76.4141L98.55 85Z" fill="black" stroke="black"/>
+        </g>
+    </g>
+</svg>
