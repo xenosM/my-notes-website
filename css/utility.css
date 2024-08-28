@@ -5,6 +5,21 @@
     align-items: center;
     justify-content: center;
 }
+.flex-column{
+    flex-direction: column;
+}
 .toggle-display{
     animation: show-dropdown .5s ease-out forwards !important;
+}
+
+.show-modal{
+    display: flex !important;
+    animation: show-modal 1s forwards;
+}
+
+.show-modal-container{
+    animation: show-modal-container 1s forwards;
+}
+.no-scroll{
+    overflow: hidden;
 }

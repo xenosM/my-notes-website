@@ -1,0 +1,107 @@
+.signin-modal-container{
+    background-color: #ffffffad;
+    padding: 2.5rem 7rem;
+    font-family: cursive;
+    gap:1.5rem;
+    border-radius: 15px;
+    position: relative;
+    /* for animation */
+    height: 0;
+    transform: scale(.8);
+    opacity: 0;
+
+        .signin-header{
+            font-size: var(--size-xl);
+        }
+
+        .signin-form{
+            gap: 1rem;
+            /* input button */
+            .signin-input-container{
+                border: 1px solid black;
+                font: var(--size-lg);
+                padding: .5em 1em;
+                border-radius: 25px;
+                gap: 3rem;
+
+                    .signin-input{
+                        border: none;
+                        background: none;
+        
+                    }
+                    .signin-input::placeholder{
+                        color: #000;
+                        font-size: var(--size-lg);
+                    }
+                    .signin-input:focus{
+                        border: none;
+                        outline: none;
+                    }
+
+            }
+         
+            /* submit button */
+            .signin-submit-btn{
+                border: none;
+                font-size: var(--size-lg);
+                cursor: pointer;
+                background-color: rgb(177, 146, 105);
+                outline-offset: 4px;
+                margin-top: 2rem;
+                    
+                    .front{
+                        color: black;
+                        padding: .5em 1em;
+                        display: block;
+                        background-color: burlywood;
+                        transform:translateY(-5px)
+                    }
+                }
+            .signin-submit-btn .front,.signin-submit-btn{
+                border-radius: 12px;
+            }
+            .signin-submit-btn:active>.front{
+                transform:translateY(0px)
+            }   
+            }   
+        .signin-text{
+            font-weight: bold;
+        } 
+        .signin-methods{
+            #google{
+                margin-right: 1rem;
+            }
+            svg{
+                cursor: pointer;
+            }
+            svg:hover{
+                transform: scale(1.1)
+            }
+        }
+}
+.modal-outside-container{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    opacity: 0;
+    display: none;
+
+        .modal-close{
+            color: #181818b1;
+            position: absolute;
+                top: 1rem;
+                right:1rem;
+            transition: all .2s ease-out;
+        }
+        .modal-close:hover{
+            transform: scale(1.1);
+            color: #000;
+        }
+}

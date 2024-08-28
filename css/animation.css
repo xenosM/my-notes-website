@@ -19,3 +19,17 @@
         height: max-content;
     }
 }
+@keyframes show-modal {
+    to{
+        opacity: 1;
+        
+    }
+}
+@keyframes show-modal-container {
+    to{
+        height: max-content;
+        transform: none;
+        opacity: 1;
+    }
+    
+}
