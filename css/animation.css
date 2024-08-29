@@ -25,6 +25,11 @@
         
     }
 }
+@keyframes hide-modal {
+    to{
+        opacity: 0;
+    }
+}
 @keyframes show-modal-container {
     to{
         height: max-content;

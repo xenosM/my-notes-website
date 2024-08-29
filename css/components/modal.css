@@ -1,4 +1,4 @@
-.signin-modal-container{
+.signin-modal-container,.login-modal-container{
     background-color: #ffffffad;
     padding: 2.5rem 7rem;
     font-family: cursive;
@@ -6,42 +6,45 @@
     border-radius: 15px;
     position: relative;
     /* for animation */
+    display: none;
     height: 0;
     transform: scale(.8);
     opacity: 0;
 
-        .signin-header{
+        .signin-header,.login-header{
             font-size: var(--size-xl);
         }
 
-        .signin-form{
-            gap: 1rem;
+        .signin-form,.login-form{
+            gap: .5rem;
             /* input button */
-            .signin-input-container{
+            .signin-input-container,.login-input-container{
                 border: 1px solid black;
                 font: var(--size-lg);
                 padding: .5em 1em;
                 border-radius: 25px;
                 gap: 3rem;
+                position: relative;
 
-                    .signin-input{
+                    .signin-input,.login-input{
                         border: none;
                         background: none;
         
                     }
-                    .signin-input::placeholder{
+                    .signin-input::placeholder,.login-input::placeholder{
                         color: #000;
                         font-size: var(--size-lg);
                     }
-                    .signin-input:focus{
+                    .signin-input:focus,.login-input:focus{
                         border: none;
                         outline: none;
                     }
+                   
 
             }
          
             /* submit button */
-            .signin-submit-btn{
+            .signin-submit-btn,.login-submit-btn{
                 border: none;
                 font-size: var(--size-lg);
                 cursor: pointer;
@@ -57,14 +60,14 @@
                         transform:translateY(-5px)
                     }
                 }
-            .signin-submit-btn .front,.signin-submit-btn{
+            .signin-submit-btn .front,.signin-submit-btn,.login-submit-btn .front,.login-submit-btn{
                 border-radius: 12px;
             }
-            .signin-submit-btn:active>.front{
+            .signin-submit-btn:active>.front,.login-submit-btn:active>.front{
                 transform:translateY(0px)
             }   
             }   
-        .signin-text{
+        .signin-text,.login-text{
             font-weight: bold;
         } 
         .signin-methods{
@@ -78,6 +81,26 @@
                 transform: scale(1.1)
             }
         }
+        .tooltip{
+            position: relative;
+            font-family: sans-serif;
+            font-size: var(--size-sm);
+            text-align: center;
+            background-color: red;
+            color: white;
+            padding: .5em ;
+            opacity: 0;
+        }
+        .tooltip:before{
+            content:"";
+            border-color: red transparent;
+            border-style: solid;
+            border-width: 0em .2em 0.2em .2em;
+            position:absolute;
+                left: calc(50% - .2em);
+                top: -.2em;
+        }   
+        
 }
 .modal-outside-container{
     height: 100vh;

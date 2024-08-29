@@ -18,8 +18,14 @@
 }
 
 .show-modal-container{
+    display: flex !important;
     animation: show-modal-container 1s forwards;
 }
 .no-scroll{
     overflow: hidden;
+}
+.show{
+    animation: show-modal 1s forwards,
+                hide-modal 1s 3s forwards;
+
 }
