@@ -8,6 +8,7 @@
 .flex-column{
     flex-direction: column;
 }
+
 .toggle-display{
     animation: show-dropdown .5s ease-out forwards !important;
 }
@@ -27,5 +28,9 @@
 .show{
     animation: show-modal 1s forwards,
                 hide-modal 1s 3s forwards;
+
+}
+.toggle-mobile-dropdown{
+    animation: show-mobile-dropdown 1.4s ease-out forwards !important;
 
 }

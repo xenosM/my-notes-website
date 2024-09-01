@@ -3,6 +3,35 @@
         display: block !important;
     }
     .header-leftside{
-        
+        border-bottom: 1px solid gray;
+        .header-nav-toggle{
+            display: block !important;
+        }
+    }
+    .header-middleside{
+    
+        .header-list-element{
+            float: none !important;
+            text-align: center;
+            user-select: none;
+        }
+        .header-list-text{
+            width:fit-content;
+            margin:0 auto;
+        }
+    }
+
+    .header-rightside{
+        margin-top: 2rem;
+
+        .header-btn-container{
+            width: fit-content;
+            margin: 0 auto;
+        }
+    }
+
+    .header-rightside,.header-middleside{
+        opacity: 0;
+        height: 0;
     }
 }

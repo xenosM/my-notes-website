@@ -51,9 +51,12 @@ function showDropdown(){
 }
 function  toggleNavBtn(){
     let navBtn = document.querySelector('.header-nav-toggle')
-
+    let mobileDropdown = document.querySelectorAll('.header-mobile-dropdown')
     navBtn.addEventListener('click',()=>{
         navBtn.classList.toggle('active')
+        mobileDropdown.forEach((element)=>{
+            element.classList.toggle('toggle-mobile-dropdown')
+        })
     })
 }
 
