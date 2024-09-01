@@ -1,6 +1,10 @@
 main{
 
 }
+.main-content-container{
+    width: 90%;
+    margin:0 auto;
+}
 main span{
     color: green;
 }
@@ -22,6 +26,7 @@ main span{
 
 .main__list >li{
     list-style: decimal-leading-zero ;
+    margin-bottom:3rem;
 }
 .main__list >li::marker{
     font-size: 2em;

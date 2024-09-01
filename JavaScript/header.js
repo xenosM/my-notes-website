@@ -49,7 +49,15 @@ function showDropdown(){
         })
     })
 }
+function  toggleNavBtn(){
+    let navBtn = document.querySelector('.header-nav-toggle')
+
+    navBtn.addEventListener('click',()=>{
+        navBtn.classList.toggle('active')
+    })
+}
 
 // CODE
 animateDropdownElement()
 showDropdown()  
+toggleNavBtn()
