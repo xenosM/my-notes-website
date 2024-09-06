@@ -9,15 +9,28 @@
         }
     }
     .header-middleside{
-    
+        .header-list{
+            padding: 0;
+        }
         .header-list-element{
             float: none !important;
-            text-align: center;
             user-select: none;
+            margin:0  !important;
         }
         .header-list-text{
+            margin:auto;
             width:fit-content;
-            margin:0 auto;
+        }
+        .header-dropdown{
+            position:relative !important;
+            inset: 0 0 0 0 !important;
+            transform: translateX(0) !important;
+            box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+            width:fit-content;
+            margin:auto;
+        }
+        .dropdown-margin{
+            margin: 1rem auto;
         }
     }
 
@@ -28,6 +41,10 @@
             width: fit-content;
             margin: 0 auto;
         }
+        .header-btn:first-child{
+            margin-right:1rem;
+        }
+        
     }
 
     .header-rightside,.header-middleside{

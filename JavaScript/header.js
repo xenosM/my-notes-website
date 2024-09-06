@@ -17,6 +17,7 @@ function animateDropdownElement(){
 }
 function closeActiveDropdown(activeDropdown){
         activeDropdown.classList.remove('toggle-display')
+        activeDropdown.classList.remove('dropdown-margin')
 }
 function showDropdown(){
     let headerListElement = document.querySelectorAll('.header-list-element');
@@ -31,9 +32,10 @@ function showDropdown(){
             // prevents two dropdown menu from appearing
             if(activatedDropdown){
                 closeActiveDropdown( activatedDropdown)
-                // if clicked element is a different element then show dropdown
+                // close the previously opened dropdown
                 if( !(record.target == event.target)){
                     dropdown.classList.toggle('toggle-display')
+                   dropdown.classList.toggle('dropdown-margin')
                     record = event
                 }
                 else{
@@ -44,6 +46,7 @@ function showDropdown(){
             // displays dropdown menu
             else {
                dropdown.classList.toggle('toggle-display')
+               dropdown.classList.toggle('dropdown-margin')
                record = event
             }
         })
