@@ -30,12 +30,12 @@ li{
 
 :root{
     /* SIZES */
-    --size-xs:10px;
-    --size-sm:12px;
-    --size-base:16px;
-    --size-lg:18px;
-    --size-xl:22px;
-    --size-2xl:26px;
-    --size-3xl:30px;
+    --size-xs: 0.625;
+    --size-sm: 0.75rem;
+    --size-base:1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.375rem;
+    --size-2xl: 1.625;
+    --size-3xl: 1.875rem;
 
 }
