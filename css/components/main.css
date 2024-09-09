@@ -6,33 +6,20 @@ main{
     margin:0 auto;
 }
 main span{
-    color: green;
+    color: var(--clr-span);
 }
-.container{
-    border: 2px solid black;
-    display: inline-block;
-    .layer1{
-        background-color: antiquewhite;
-        padding: 1rem;
-    }
-    .layer2{
-        background-color: aquamarine;
-        padding: 1rem;
-    }
-    .preceded-element{
-        background-color: azure;
-    }
-}
+
 
 .main__list >li{
     list-style: decimal-leading-zero ;
     margin-bottom:3rem;
+    width: fit-content;
 }
 .main__list >li::marker{
     font-size: 2em;
 }
 strong{
-    color: slateblue;
+    color: var(--clr-strong);
 }
 .gap{
     margin-bottom: 1rem;
@@ -40,29 +27,59 @@ strong{
 *::selection{
     background-color: skyblue;
 }
+
+.container{
+    width: 80%;
+    display: inline-block;
+    .layer1{
+        background-color: var(--clr-layer1-bg);
+        padding: 1rem;
+    }
+    .layer2{
+        background-color: var(--clr-layer2-bg);
+        padding: 1rem;
+    }
+    .preceded-element{
+        background-color:var(--clr-preceded-bg);
+    }
+}
+.main__list .container{
+    color: var(--clr-container-font);
+}
+
+.layer1,.layer2{
+    text-align: center;
+}
+
+.layer1{
+    width: clamp(750px,80%,1000px);
+    border: 2px solid black;
+}
+
+.main__list h2{
+    margin-bottom: 2rem;
+}
 /* .class.class */
 .section-1 {
     /* main */
     .foo.bar.baz{
-    color: red;
+    color: var( --clr-selected);
     }
 }
 /* .class .class  */
 .section-2{
     /* main */
     .main .child {
-        color: red;
+        color: var( --clr-selected);
     }
-     .main .child1{
-        color: red;
-    }
+  
 } 
 /* element element */
 .section-3{
     
     /* main */
     div p{
-        color: red;
+        color: var( --clr-selected);
     }
 }
 /* element > element */
@@ -70,85 +87,85 @@ strong{
    
     /* main */
     .layer1 > p{
-        color: red;
+        color: var( --clr-selected);
     }
 }
 /* element + element */
 .section-5{
     .element1 + p{
-        color: red;
+        color: var( --clr-selected);
     }
 }
 /* element ~ element */
 .section-6{
     .preceded-element ~ p{
-        color: red;
+        color: var( --clr-selected);
     }
 }
 /* [attribute] */
 .section-7{
     [id]{
-        color: red;
+        color: var( --clr-selected);
     }
     [class]{
         color: green;
     }
     [style]{
-        color: lightskyblue;
+        color: brown;
     }
 }
 /* [attribute = value] */
 .section-8{
     [id ="specified"]{
-        color: red;
+        color: var( --clr-selected);
     }
     [class ="specified"]{
         color: green;
     }
-    [style ="background-color: yellow;"]{
-        color: lightskyblue;
+    [style ="background-color:burlywood;"]{
+        color: brown;
     }
 }
 /* [attribute ~= value] */
 .section-9{
     [class ~= "foo"]{
-        color:red;
+        color:var( --clr-selected);
     }
 }
 /* [attribute] |= value  */
 .section-10{
     [class |= "foo"]{
-        color:red;
+        color:var( --clr-selected);
     }
 }
 /* [attribute] ^= value */
 .section-11{
     [class ^= "foo"]{
-        color: red;
+        color: var( --clr-selected);
     }
 }
 /* [attribute] $= value */
 .section-12{
     [class $= "foo"]{
-        color: red;
+        color: var( --clr-selected);
     }
 }
 /* [attribute] *= value */
 .section-13{
     [class *= "foo"]{
-        color: red;
+        color: var( --clr-selected);
     }
 }
 /*:active  */
 .section-14{
     p:active,a:active{
-        color:red
+        color:var( --clr-selected)
     }
 }
 /* enabled: & disabled */
 .section-15{
     input:disabled{
-        background-color: red;
+        background-color: var( --clr-selected);
     };
     input:enabled{
         background-color: green;
@@ -165,25 +182,25 @@ strong{
 /* :first-child */
 .section-17{
     p:first-child{
-        color:red
+        color:var( --clr-selected)
     }
 }
 /* ::first-letter */
 .section-18{
     p:first-letter{
-        color: red;
+        color: var( --clr-selected);
     }
 }
 /* ::first-line */
 .section-19{
     p:first-line{
-        color: red;
+        color: var( --clr-selected);
     }
 }
 /* :first-of-type */
 .section-20{
     p:first-of-type{
-        color: red;
+        color: var( --clr-selected);
     }
 }
 /* :focus */
@@ -196,7 +213,7 @@ strong{
 .section-22{
     strong:has(+p)::after{
         content:"(this header has p immediately after it)";
-        color:red;
+        color:var( --clr-selected);
     }
 }
 /* :in-range() */
@@ -205,13 +222,13 @@ strong{
         background-color: green;
     }
     input:out-of-range{
-        background-color: red;
+        background-color: var( --clr-selected);
     }
 }
 /* :invalid */
 .section-24{
     input:invalid{
-        background-color: red;
+        background-color: var( --clr-selected);
     }
     input:valid{
         background-color: green;
@@ -220,86 +237,90 @@ strong{
 /* :last-child */
 .section-25{
     p:last-child{
-        color: red;
+        color: var( --clr-selected);
     }
 }
 /* :last-of-type */
 .section-26{
     p:last-of-type{
-        color: red;
+        color: var( --clr-selected);
     }
 }
 /* :link */
 .section-27{
+    a{
+        color:white;
+        padding:.25rem;
+    }
     a:link{
-        background-color: red;
+        background-color: var( --clr-selected);
     }
 }
 /* ::marker */
 .section-28{
     .list-1 li::marker{
-        color: red;
+        color: var( --clr-selected);
     }
 
 }
 /* :not() */
 .section-29{
     .layer1 :not([class = "foo"] ){
-        color: red;
+        color: var( --clr-selected);
     }
 }
 /* :nth-child() */
 .section-30{
     .layer2:first-of-type p:nth-child(2){
-        color: red;
+        color: var( --clr-selected);
     }
     .layer2:nth-of-type(2) p:nth-child(3){
-        color: red;
+        color: var( --clr-selected);
     }
 }
 /* :nth-last-child() */
 .section-31{
     .layer2:first-of-type p:nth-last-child(2){
-        color: red;
+        color: var( --clr-selected);
     }
     .layer2:nth-of-type(2) p:nth-last-child(3){
-        color: red;
+        color: var( --clr-selected);
     }
 }
 /* :nth-of-type() */
 .section-32{
     .layer2:first-of-type p:nth-of-type(2){
-        color: red;
+        color: var( --clr-selected);
     }
     .layer2:nth-of-type(2) p:nth-of-type(3){
-        color: red;
+        color: var( --clr-selected);
     }
 }
 /* :nth-last-of-type() */
 .section-33{
     .layer2:first-of-type p:nth-last-of-type(2){
-        color: red;
+        color: var( --clr-selected);
     }
     .layer2:nth-of-type(2) p:nth-last-of-type(3){
-        color: red;
+        color: var( --clr-selected);
     }
 }
 /* :only-of-type */
 .section-34{
     p:only-of-type{
-        color: red;
+        color: var( --clr-selected);
     }
 }
 /* :only-child */
 .section-35{
     p:only-child    {
-        --value-:red;
+        --value-:var( --clr-selected);
         color: var(--value-);
     }
 }
 /* ::selection */
 .section-36{
     .layer2 p::selection{
-        background-color: red;
+        background-color: var( --clr-selected);
     }
 }

@@ -65,6 +65,10 @@
         opacity: 0;
         height: 0;
     }
+    /* Main */
+    .layer1{
+        width: clamp(250px,100%,900px) !important;
+    }
     /* Modal container */
     .modal-outside-container{
         overflow: hidden;

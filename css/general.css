@@ -7,7 +7,7 @@ html{
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(223, 223, 209);
+    background-color: var( --clr-body-bg);
     
 }
 button{
@@ -37,5 +37,20 @@ li{
     --size-xl: 1.375rem;
     --size-2xl: 1.625;
     --size-3xl: 1.875rem;
-
+    /* COLOR */
+    --clr-body-bg: #FFFBE9;
+     /* MAIN CONTENT FONT COLORS */
+     --clr-layer1-bg: #ffedd3;
+     --clr-layer2-bg:#e7cdba;
+     --clr-preceded-bg: #AD8B73;
+     --clr-container-font: black;
+     --clr-span: #594545;
+     --clr-strong: #be9932;
+     --clr-selected: #CD5C08;
 }
+/* 
+#E3CAA5
+#CEAB93
+#AD8B73
+#7D5A50
+*/
