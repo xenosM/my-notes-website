@@ -12,8 +12,11 @@ main span{
 
 .main__list >li{
     list-style: decimal-leading-zero ;
-    margin-bottom:3rem;
-    width: fit-content;
+    margin: 0 auto;
+    margin-bottom:6rem;
+    position: relative;
+    max-width: 80%;
+    /* border: 1px solid red; */
 }
 .main__list >li::marker{
     font-size: 2em;
@@ -29,7 +32,6 @@ strong{
 }
 
 .container{
-    width: 80%;
     display: inline-block;
     .layer1{
         background-color: var(--clr-layer1-bg);
@@ -45,6 +47,7 @@ strong{
 }
 .main__list .container{
     color: var(--clr-container-font);
+
 }
 
 .layer1,.layer2{

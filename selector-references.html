@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="css/components/main.css">
 <link rel="stylesheet" href="css/components/header.css">
 <link rel="stylesheet" href="css/components/modal.css">
+<link rel="stylesheet" href="css/components/css-tooltip.css">
 
 
 
@@ -141,6 +142,15 @@
                             <p class="foo bar baz">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, vel!</p>
                         </div>
                     </div>
+                    <div class="css-tooltip-container ">
+                        <div class="css-tooltip-content">
+                            <code>
+                                .foo.bar.baz{<br>
+                                    color: var( --clr-selected);<br>
+                                }
+                            </code>
+                        </div>
+                    </div>
                 </li>
                 <!-- 02 -->
                 <li>
@@ -155,7 +165,17 @@
                             </div>
                         </div>
                     </div>
+                    <div class="css-tooltip-container ">
+                        <div class="css-tooltip-content">
+                            <code>
+                                .main .child {<br>
+                                    color: var( --clr-selected);<br>
+                                }
+                            </code>
+                        </div>
+                    </div>
                 </li>
+            
                 <!-- 03 -->
                 <li>
                     <h2><span>element element</span> (selects all the element inside the element [<strong>including children and further decendents</strong>])</h2>
@@ -168,6 +188,15 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quidem!</p>
                             </div>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, rerum?</p>
+                        </div>
+                    </div>
+                    <div class="css-tooltip-container ">
+                        <div class="css-tooltip-content">
+                            <code>
+                                div p{<br>
+                                    color: var( --clr-selected);<br>
+                                }
+                            </code>
                         </div>
                     </div>
                 </li>
@@ -185,6 +214,15 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, rerum?</p>
                         </div>
                     </div>
+                    <div class="css-tooltip-container ">
+                        <div class="css-tooltip-content">
+                            <code>
+                                .layer1 > p{<br>
+                                    color: var( --clr-selected); <br>
+                                }
+                            </code>
+                        </div>
+                    </div>
                 </li>
                 <!-- 05 -->
                 <li>
@@ -194,6 +232,15 @@
                             <p class="element1">element 1</p>
                             <p>sibling 1</p>
                             <p>sibling 2</p>
+                        </div>
+                    </div>
+                    <div class="css-tooltip-container ">
+                        <div class="css-tooltip-content">
+                            <code>
+                                .element1 + p{<br>
+                                    color: var( --clr-selected);<br>
+                                }
+                            </code>
                         </div>
                     </div>
                 </li>

@@ -75,4 +75,12 @@
         background-color:red;
 
     }
+    /* CSS TOOLTIP */
+    .css-tooltip-container{
+        transform: translateX(50%);
+        top:105%;
+        right: 50% !important;
+        bottom: auto !important;
+    }
+    
 }

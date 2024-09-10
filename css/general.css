@@ -1,5 +1,6 @@
 *{
     margin:0;
+    font-size: var(--size-base);
     box-sizing: border-box;
 }
 html{
@@ -43,7 +44,9 @@ li{
      --clr-layer1-bg: #ffedd3;
      --clr-layer2-bg:#e7cdba;
      --clr-preceded-bg: #AD8B73;
+
      --clr-container-font: black;
+     
      --clr-span: #594545;
      --clr-strong: #be9932;
      --clr-selected: #CD5C08;
